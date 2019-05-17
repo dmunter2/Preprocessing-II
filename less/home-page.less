@@ -27,6 +27,26 @@
         border-radius: 10px;
       }
     }
+
+    @media (@phone){
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+
+      .text-content{
+        width: 95%;
+      }
+      .img-content{
+        width: 100%;
+      }
+      
+    }
+  }
+  @media(@phone){
+    .inverse-content{
+      display: flex;
+      flex-direction: column-reverse;
+    } 
   }
 
   .inverse-content {
@@ -51,6 +71,11 @@
     img {
       border-radius: 10px;
     }
+
+
+      @media(@phone) {
+        width: 100%;
+      }
   }
 
   .content-pick {
@@ -65,7 +90,19 @@
 
       .btn {
         .custom-btn(@tx-align: center)
+        @media(@phone){
+          
+        }
       }
+      @media(@phone) {
+        width: 65%;
+      }
+    }
+    @media(@phone) {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
     }
   }
 }// home
