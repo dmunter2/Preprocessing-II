@@ -1,1 +1,40 @@
 // Navigation Styles here
+div .nav1{
+    margin: 2%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        padding: 3% 3%;
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: black;
+    }
+}
+
+.container{
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media(max-width: 500px){
+    .home {
+        padding: 0 10px 0;
+        width: 97%;
+    }
+    .container .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    div .nav1{
+        width: 94%;
+        justify-content: space-around;
+    }
+
+
+}
